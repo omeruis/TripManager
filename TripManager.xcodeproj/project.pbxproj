@@ -14,6 +14,9 @@
 		1794B49F2CA09A400082C26E /* TripManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794B49D2CA09A400082C26E /* TripManagerTests.swift */; };
 		1794B4A32CA09A430082C26E /* TripManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794B4A02CA09A430082C26E /* TripManagerUITests.swift */; };
 		1794B4A42CA09A430082C26E /* TripManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794B4A12CA09A430082C26E /* TripManagerUITestsLaunchTests.swift */; };
+		1794B4A82CA09D150082C26E /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1794B4A72CA09D150082C26E /* RswiftLibrary */; };
+		1794B4AE2CA09DCA0082C26E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1794B4AD2CA09DCA0082C26E /* Localizable.xcstrings */; };
+		1794B4BA2CA09FE40082C26E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1794B4B92CA09FE40082C26E /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +47,25 @@
 		1794B49D2CA09A400082C26E /* TripManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerTests.swift; sourceTree = "<group>"; };
 		1794B4A02CA09A430082C26E /* TripManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerUITests.swift; sourceTree = "<group>"; };
 		1794B4A12CA09A430082C26E /* TripManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1794B4AD2CA09DCA0082C26E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1794B4B82CA09F520082C26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1794B4B92CA09FE40082C26E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1794B4AF2CA09E890082C26E /* Fonts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1794B4632CA099990082C26E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1794B4A82CA09D150082C26E /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +117,8 @@
 		1794B4982CA09A3C0082C26E /* TripManager */ = {
 			isa = PBXGroup;
 			children = (
+				1794B4B82CA09F520082C26E /* Info.plist */,
+				1794B4AC2CA09D920082C26E /* Resources */,
 				1794B4942CA09A3C0082C26E /* Preview Content */,
 				1794B4952CA09A3C0082C26E /* Assets.xcassets */,
 				1794B4962CA09A3C0082C26E /* ContentView.swift */,
@@ -127,6 +144,16 @@
 			path = TripManagerUITests;
 			sourceTree = "<group>";
 		};
+		1794B4AC2CA09D920082C26E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1794B4AF2CA09E890082C26E /* Fonts */,
+				1794B4AD2CA09DCA0082C26E /* Localizable.xcstrings */,
+				1794B4B92CA09FE40082C26E /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,13 +164,19 @@
 				1794B4622CA099990082C26E /* Sources */,
 				1794B4632CA099990082C26E /* Frameworks */,
 				1794B4642CA099990082C26E /* Resources */,
+				1794B4A52CA09B790082C26E /* Swift Lint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1794B4AA2CA09D450082C26E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1794B4AF2CA09E890082C26E /* Fonts */,
 			);
 			name = TripManager;
 			packageProductDependencies = (
+				1794B4A72CA09D150082C26E /* RswiftLibrary */,
 			);
 			productName = TripManager;
 			productReference = 1794B4662CA099990082C26E /* TripManager.app */;
@@ -222,6 +255,9 @@
 			);
 			mainGroup = 1794B45D2CA099990082C26E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1794B4A62CA09D150082C26E /* XCRemoteSwiftPackageReference "R" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1794B4672CA099990082C26E /* Products */;
 			projectDirPath = "";
@@ -240,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1794B49B2CA09A3C0082C26E /* Preview Assets.xcassets in Resources */,
+				1794B4BA2CA09FE40082C26E /* Colors.xcassets in Resources */,
 				1794B49C2CA09A3C0082C26E /* Assets.xcassets in Resources */,
+				1794B4AE2CA09DCA0082C26E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +297,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1794B4A52CA09B790082C26E /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1794B4622CA099990082C26E /* Sources */ = {
@@ -299,6 +359,10 @@
 			isa = PBXTargetDependency;
 			target = 1794B4652CA099990082C26E /* TripManager */;
 			targetProxy = 1794B4812CA0999E0082C26E /* PBXContainerItemProxy */;
+		};
+		1794B4AA2CA09D450082C26E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1794B4A92CA09D450082C26E /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -362,6 +426,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -418,6 +483,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -426,18 +492,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = primaryBlue;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TripManager/Preview Content\"";
 				DEVELOPMENT_TEAM = MX4JW6983V;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripManager/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,18 +529,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = primaryBlue;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TripManager/Preview Content\"";
 				DEVELOPMENT_TEAM = MX4JW6983V;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripManager/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,6 +674,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1794B4A62CA09D150082C26E /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1794B4A72CA09D150082C26E /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1794B4A62CA09D150082C26E /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		1794B4A92CA09D450082C26E /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1794B4A62CA09D150082C26E /* XCRemoteSwiftPackageReference "R" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1794B45E2CA099990082C26E /* Project object */;
 }

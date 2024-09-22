@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct TripManagerApp: App {
+    let test = "A"+"B"
     var body: some Scene {
         WindowGroup {
             ContentView()
