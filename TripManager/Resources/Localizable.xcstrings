@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "Hello, world!" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bonjour, monde"
+          }
+        }
+      }
     },
     "text.sample.n.quantity" : {
       "extractionState" : "manual",
@@ -30,20 +37,20 @@
             "plural" : {
               "one" : {
                 "stringUnit" : {
-                  "state" : "new",
-                  "value" : "Text complex %d element"
+                  "state" : "translated",
+                  "value" : "Texte complexe %d element"
                 }
               },
               "other" : {
                 "stringUnit" : {
-                  "state" : "new",
-                  "value" : "Text complex %d elements"
+                  "state" : "translated",
+                  "value" : "Texte complexe %d elements"
                 }
               },
               "zero" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Text complex %d element"
+                  "value" : "Texte complexe %d element"
                 }
               }
             }

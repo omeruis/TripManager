@@ -14,6 +14,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Text(String(format: NSLocalizedString("text.sample.simple ", comment: "")))
         }
         .padding()
     }
